@@ -9,10 +9,16 @@ class AgenciaDeFormentoController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function cadastro()
     {
         return view( view: '/cadastro/agencia-de-formento');
     }
+
+    public function cadastro()
+    {
+        return view( view: '/pesquisas/agencia-de-formento');
+    }
+
 
     /**
      * Show the form for creating a new resource.
