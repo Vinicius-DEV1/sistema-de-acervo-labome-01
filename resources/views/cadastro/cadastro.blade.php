@@ -81,10 +81,12 @@
 
     <div class="container">
     <!-- Box 1 -->
-    <div class="box" onclick="window.location.href='agenciadeformento';">
+    <div class="box" onclick="window.location.href='cadastro/agencia-de-formento';">
         <i class="fas fa-project-diagram"></i>
         <span>Agência de Fomento</span>
     </div>
+
+
 
     <!-- Box 2 -->
     <div class="box" onclick="alert('Equipe Clicada!')">
@@ -111,7 +113,7 @@
     </div>
 
     <!-- Box 6 -->
-    <div class="box" onclick="window.location.href='projeto';">
+    <div class="box" onclick="window.location.href='cadastro/projeto';">
         <i class="fas fa-tasks"></i>
         <span>Projeto</span>
     </div>
