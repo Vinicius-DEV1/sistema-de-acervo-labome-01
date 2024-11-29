@@ -9,9 +9,14 @@ class ArquivoController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function cadastro()
     {
-        //
+        return view( view: '/cadastro/arquivo');
+    }
+
+    public function pesquisas()
+    {
+        return view( view: '/pesquisas/arquivo');
     }
 
     /**

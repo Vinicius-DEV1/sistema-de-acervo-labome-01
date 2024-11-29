@@ -14,6 +14,16 @@ class TipoDeProjetoController extends Controller
         //
     }
 
+    public function cadastro()
+    {
+        return view( view: '/cadastro/tipo-de-projeto');
+    }
+
+    public function pesquisas()
+    {
+        return view( view: '/pesquisas/tipo-de-projeto');
+    }
+
     /**
      * Show the form for creating a new resource.
      */

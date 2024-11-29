@@ -12,7 +12,17 @@ class CursoController extends Controller
     public function index()
     {
         //
-        return view ( view: '/pesquisas/Curso' );
+    }
+
+
+    public function cadastro()
+    {
+        return view( view: '/cadastro/curso');
+    }
+
+    public function pesquisas()
+    {
+        return view( view: '/pesquisas/curso');
     }
 
     /**

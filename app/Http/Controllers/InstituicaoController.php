@@ -14,6 +14,16 @@ class InstituicaoController extends Controller
         //
     }
 
+    public function cadastro()
+    {
+        return view( view: '/cadastro/instituicao');
+    }
+
+    public function pesquisas()
+    {
+        return view( view: '/pesquisas/instituicao');
+    }
+
     /**
      * Show the form for creating a new resource.
      */

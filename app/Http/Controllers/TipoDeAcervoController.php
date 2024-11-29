@@ -14,6 +14,16 @@ class TipoDeAcervoController extends Controller
         //
     }
 
+    public function cadastro()
+    {
+        return view( view: '/cadastro/tipo-de-acervo');
+    }
+
+    public function pesquisas()
+    {
+        return view( view: '/pesquisas/tipo-de-acervo');
+    }
+
     /**
      * Show the form for creating a new resource.
      */

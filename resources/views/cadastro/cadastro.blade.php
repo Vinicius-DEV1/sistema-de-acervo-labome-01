@@ -1,6 +1,8 @@
 @extends('templates.template')
 
+
 @section('content')
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -81,94 +83,72 @@
 
     <div class="container">
     <!-- Box 1 -->
-    <div class="box" onclick="window.location.href='cadastro/agencia-de-formento';">
-        <i class="fas fa-project-diagram"></i>
-        <span>Agência de Fomento</span>
+    <div class="box" onclick="window.location.href='{{ route('cadastro.AgenciaDeFormento') }}'">
+        <span>Agência de Formento</span>
     </div>
 
-
-
     <!-- Box 2 -->
-    <div class="box" onclick="alert('Equipe Clicada!')">
-        <i class="fas fa-users"></i>
+    <div class="box" onclick="window.location.href='{{ route('cadastro.Curso') }}'">
         <span>Curso</span>
     </div>
 
-    <!-- Box 3 -->
-    <div class="box" onclick="alert('Datas Clicadas!')">
-        <i class="fas fa-calendar-alt"></i>
-        <span>Entrevista</span>
-    </div>
-
     <!-- Box 4 -->
-    <div class="box" onclick="alert('Documentos Clicados!')">
-        <i class="fas fa-file-alt"></i>
+    <div class="box" onclick="window.location.href='{{ route('cadastro.Instituicao') }}'">
         <span>Instituição</span>
     </div>
 
     <!-- Box 5 -->
-    <div class="box" onclick="alert('Financiamento Clicado!')">
-        <i class="fas fa-money-bill-alt"></i>
+    <div class="box" onclick="window.location.href='{{ route('cadastro.Pessoa') }}'">
         <span>Pessoa</span>
     </div>
 
     <!-- Box 6 -->
-    <div class="box" onclick="window.location.href='cadastro/projeto';">
-        <i class="fas fa-tasks"></i>
+    <div class="box" onclick="window.location.href='{{ route('cadastro.Projeto') }}'">
         <span>Projeto</span>
     </div>
 
     <!-- Box 7 -->
-    <div class="box" onclick="alert('Relatórios Clicados!')">
-        <i class="fas fa-clipboard-list"></i>
+    <div class="box" onclick="window.location.href='{{ route('cadastro.TipoDeRecurso') }}'">
         <span>Recurso</span>
     </div>
 
     <!-- Box 8 -->
-    <div class="box" onclick="alert('Configurações Clicadas!')">
-        <i class="fas fa-cogs"></i>
+    <div class="box" onclick="window.location.href='{{ route('cadastro.Relacoes') }}'">
         <span>Relações de Pesquisador e Entrevistado</span>
     </div>
 
     <!-- Box 9 -->
-    <div class="box" onclick="alert('Feedback Clicado!')">
-        <i class="fas fa-comment-dots"></i>
+    <div class="box" onclick="window.location.href='{{ route('cadastro.SituacaoDeEntrevista') }}'">
         <span>Situação de Entrevista</span>
     </div>
 
     <!-- Box 10 -->
-    <div class="box" onclick="alert('Gestão Clicada!')">
-        <i class="fas fa-users-cog"></i>
+    <div class="box" onclick="window.location.href='{{ route('cadastro.Tema') }}'">
         <span>Tema</span>
     </div>
 
     <!-- Box 11 -->
-    <div class="box" onclick="alert('Status Clicado!')">
-        <i class="fas fa-check-circle"></i>
+    <div class="box" onclick="window.location.href='{{ route('cadastro.TipoDeAcervo') }}'">
         <span>Tipo de acervo</span>
     </div>
 
     <!-- Box 12 -->
-    <div class="box" onclick="alert('Progressão Clicada!')">
-        <i class="fas fa-chart-line"></i>
+    <div class="box" onclick="window.location.href='{{ route('cadastro.TipoDeProjeto') }}'">
         <span>Tipo de Projeto</span>
     </div>
 
     <!-- Box 13 -->
-    <div class="box" onclick="alert('Compartilhamento Clicado!')">
-        <i class="fas fa-share-alt"></i>
+    <div class="box" onclick="window.location.href='{{ route('cadastro.TipoDeRecurso') }}'"">
         <span>Tipo de Recurso</span>
     </div>
 
     <!-- Box 14 -->
-    <div class="box" onclick="alert('Busca Clicada!')">
-        <i class="fas fa-search"></i>
+    <div class="box" onclick="window.location.href='{{ route('cadastro.Usuario') }}'">
         <span>Usuário</span>
     </div>
 
     <!-- Box 15 -->
-    <div class="box" onclick="alert('Busca Clicada!')">
-        <i class="fas fa-search"></i>
+    <div class="box" onclick="window.location.href='{{ route('cadastro.Arquivo') }}'">
         <span>Arquivos</span>
     </div>
 

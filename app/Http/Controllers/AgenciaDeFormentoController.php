@@ -14,7 +14,7 @@ class AgenciaDeFormentoController extends Controller
         return view( view: '/cadastro/agencia-de-formento');
     }
 
-    public function cadastro()
+    public function pesquisas()
     {
         return view( view: '/pesquisas/agencia-de-formento');
     }

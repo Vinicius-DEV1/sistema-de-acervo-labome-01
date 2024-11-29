@@ -14,6 +14,16 @@ class TipoDeRecursoController extends Controller
         //
     }
 
+    public function cadastro()
+    {
+        return view( view: '/cadastro/tipo-de-recurso');
+    }
+
+    public function pesquisas()
+    {
+        return view( view: '/pesquisas/tipo-de-recurso');
+    }
+
     /**
      * Show the form for creating a new resource.
      */

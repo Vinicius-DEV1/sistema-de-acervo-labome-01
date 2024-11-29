@@ -14,6 +14,16 @@ class TemaController extends Controller
         //
     }
 
+    public function cadastro()
+    {
+        return view( view: '/cadastro/tema');
+    }
+
+    public function pesquisas()
+    {
+        return view( view: '/pesquisas/tema');
+    }
+
     /**
      * Show the form for creating a new resource.
      */

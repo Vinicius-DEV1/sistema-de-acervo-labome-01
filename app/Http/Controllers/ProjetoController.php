@@ -12,7 +12,16 @@ class ProjetoController extends Controller
     public function index()
     {
         //
-        return view( view: '/cadastro/Projeto' );
+    }
+
+    public function cadastro()
+    {
+        return view( view: '/cadastro/projeto');
+    }
+
+    public function pesquisas()
+    {
+        return view( view: '/pesquisas/projeto');
     }
 
     /**

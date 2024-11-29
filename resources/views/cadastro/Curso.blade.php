@@ -75,7 +75,7 @@
     </style>
     <form>
         <div class="form-group">
-            <label for="nome_agencia">Nome da Agência de Fomento</label>
+            <label for="nome_agencia">Nome</label>
             <input type="text" id="nome_agencia" name="nome_agencia" required>
             
         </div>

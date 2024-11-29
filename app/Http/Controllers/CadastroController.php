@@ -15,6 +15,16 @@ class CadastroController extends Controller
         return view( view: '/cadastro/cadastro' );
     }
 
+    public function cadastro()
+    {
+        return view( view: '/cadastro/cadastro');
+    }
+
+    public function pesquisas()
+    {
+        return view( view: '/pesquisas/cadastro');
+    }
+
     /**
      * Show the form for creating a new resource.
      */

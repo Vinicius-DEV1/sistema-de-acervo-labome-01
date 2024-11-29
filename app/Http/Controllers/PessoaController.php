@@ -14,6 +14,16 @@ class PessoaController extends Controller
         //
     }
 
+    public function cadastro()
+    {
+        return view( view: '/cadastro/pessoa');
+    }
+
+    public function pesquisas()
+    {
+        return view( view: '/pesquisas/pessoa');
+    }
+
     /**
      * Show the form for creating a new resource.
      */
