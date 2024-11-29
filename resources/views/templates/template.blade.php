@@ -81,8 +81,8 @@
 
     <!-- Menu de navegação -->
     <div class="menu">
-        <a onclick="window.location.href='/';" >Inicial</a>
-        <a onclick="window.location.href='cadastro';">Cadastros</a>
+        <a onclick="window.location.href='/'" >Inicial</a>
+        <a onclick="window.location.href='/cadastro'">Cadastros</a>
         <a >Pesquisas</a>
         <a >Empréstimos</a>
         <a >Relatórios</a>

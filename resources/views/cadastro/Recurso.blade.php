@@ -74,11 +74,23 @@
         }
     </style>
     <form>
+        <h2> Cadastro de Recurso </h2>
+
         <div class="form-group">
-            <label for="nome_agencia">Nome do recurso</label>
+            <label for="nome_agencia">Descrição</label>
             <input type="text" id="nome_agencia" name="nome_agencia" required>
-            
         </div>
+
+        <div class="form-group">
+        <label for="instituicao">Instituição:</label>
+        <select id="instituicao" name="instituicao" required>
+            <option value="">Selecione...</option>
+            <option value="uva">UVA</option>
+            <option value="uece">UECE</option>
+            <option value="CADASTRAR">(+) CADASTRAR OUTRA INSTITUIÇÃO</option>
+        </select>
+        </div>
+
         <button type="submit" class="btn">Cadastrar</button>
     </form>
 

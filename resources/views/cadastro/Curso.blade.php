@@ -73,12 +73,22 @@
             font-size: 16px;
         }
     </style>
+
     <form>
+    <h2> Cadastro de curso </h2>
+
         <div class="form-group">
-            <label for="nome_agencia">Nome</label>
-            <input type="text" id="nome_agencia" name="nome_agencia" required>
-            
+            <label for="nome_curso">Nome</label>
+            <input type="text" id="nome_curso" name="nome_curso" required>
         </div>
+
+        <div class="form-group">
+            <label for="nome_curso">Nível</label>
+            <input type="text" id="nome_curso" name="nome_curso" required>
+        </div>
+
+
+
         <button type="submit" class="btn">Cadastrar</button>
     </form>
 

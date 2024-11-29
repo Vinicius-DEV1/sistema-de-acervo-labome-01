@@ -74,10 +74,14 @@
         }
     </style>
     <form>
+        <h2> Cadastro de Instituicao </h2>
         <div class="form-group">
-            <label for="nome_agencia">Nome da Agência de Fomento</label>
+            <label for="nome_agencia">Sigla</label>
             <input type="text" id="nome_agencia" name="nome_agencia" required>
-            
+        </div>
+        <div class="form-group">
+            <label for="nome_agencia">Nome</label>
+            <input type="text" id="nome_agencia" name="nome_agencia" required>
         </div>
         <button type="submit" class="btn">Cadastrar</button>
     </form>
