@@ -74,8 +74,9 @@
         }
     </style>
 
-    <form>
-    <h2> Cadastro de curso </h2>
+    <form method="POST" action="{{ route('curso.store') }}">
+        @csrf
+        <h2> Cadastro de curso </h2>
 
         <div class="form-group">
             <label for="nome_curso">Nome</label>
@@ -83,16 +84,23 @@
         </div>
 
         <div class="form-group">
-            <label for="nome_curso">Nível</label>
-            <input type="text" id="nome_curso" name="nome_curso" required>
-        </div>
-
-
+        <label for="nivel">Nivel</label>
+        <select id="nivel" name="nivel" required>
+            <option value="">Selecione...</option>
+            <option value="graduacao">Graduação</option>
+            <option value="pos_graduacao">Pos-GRADUAÇÃO</option>
+            <option value="CADASTRAR">(+) CADASTRAR OUTRO CURSO</option>
+        </select>
+    </div>
 
         <button type="submit" class="btn">Cadastrar</button>
     </form>
 
-    
+@if(session('success'))
+<p>{{ session('success') }}</p>
+@endif
+
+
 
 
 @endsection

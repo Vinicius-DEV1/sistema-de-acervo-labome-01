@@ -27,6 +27,7 @@ Route::get('/', function () {
 Route::get('/cadastro/agencia-de-formento', [AgenciadeFormentoController::class, 'cadastro'])->name('cadastro.AgenciaDeFormento');
 
 Route::get('/cadastro/curso', [CursoController::class, 'cadastro'])->name('cadastro.Curso');
+Route::post('/cadastro/curso', [CursoController::class, 'store'])->name('curso.store');
 
 Route::get('/cadastro', [CadastroController::class, 'cadastro'])->name('cadastro.Cadastro');
 

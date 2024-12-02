@@ -1,10 +1,18 @@
 <?php
 
-namespace App\Models\Models;
+namespace App\Models;
 
+//ELOQUENT
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class ModelCurso extends Model
 {
-    protected $table='curso'
+    use HasFactory;
+
+    // Especifique o nome da tabela explicitamente
+    protected $table = 'curso';
+    
+    //
+    protected $fillable = ['nivel','nome_curso'];
 }
