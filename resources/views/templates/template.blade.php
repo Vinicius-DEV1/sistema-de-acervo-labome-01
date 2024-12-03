@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
     <title>LABOME - Laboratorio das Memorias e Práticas Cotidianas</title>
+    
     <link rel="stylesheet" href="{{url('assets/bootstrap/css/bootstrap.min.css')}}">
+
+    <!-- Incluir o CSS global -->
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    
+    <!-- Espaço para os estilos adicionais -->
+    @stack('styles')
 
     <style>
         /* Estilo geral */
@@ -94,9 +101,17 @@
     @yield('content')
     
     <hr>
+
+
     <footer style="text-align: center; padding: 20px; background-color: #f0f0f0;">
         © 2024 Universidade Estadual Vale do Acaraú
     </footer>
+
+    <!-- Scripts globais -->
+    <script src="{{ asset('js/app.js') }}"></script>
+
+    <!-- Espaço para scripts adicionais -->
+    @stack('scripts')
 
 </body>
 </html>

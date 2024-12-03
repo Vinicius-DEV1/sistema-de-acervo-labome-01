@@ -1,6 +1,7 @@
 @extends('templates.template')
 
 @section('content')
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -84,23 +85,39 @@
         </div>
 
         <div class="form-group">
-        <label for="nivel">Nivel</label>
-        <select id="nivel" name="nivel" required>
-            <option value="">Selecione...</option>
-            <option value="graduacao">Graduação</option>
-            <option value="pos_graduacao">Pos-GRADUAÇÃO</option>
-            <option value="CADASTRAR">(+) CADASTRAR OUTRO CURSO</option>
-        </select>
-    </div>
+            <label for="nivel">Nivel</label>
+            <select id="nivel" name="nivel" required>
+                <option value="">Selecione...</option>
+                <option value="graduacao">Graduação</option>
+                <option value="pos_graduacao">Pos-Graduação</option>
+                <option value="CADASTRAR">(+) CADASTRAR OUTRO CURSO</option>
+            </select>
+        </div>
 
-        <button type="submit" class="btn">Cadastrar</button>
+        <button type="submit" class="btn">Cadastrar </button>
     </form>
 
-@if(session('success'))
-<p>{{ session('success') }}</p>
-@endif
 
 
+    @if(session('success'))
+        <div id="successMessage" class="success-box show">
+            <button id="closeBtn" class="close-btn">X</button>
+            {{ session('success') }}
+        </div>
+    @endif
 
 
 @endsection
+
+
+
+
+@push('styles')
+    <!-- Incluindo o arquivo CSS para o box flutuante -->
+    <link rel="stylesheet" href="{{ asset('css/success-message.css') }}">
+@endpush
+
+@push('scripts')
+    <!-- Incluindo o arquivo JavaScript -->
+    <script src="{{ asset('js/success-message.js') }}"></script>
+@endpush
