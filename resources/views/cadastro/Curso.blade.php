@@ -73,6 +73,7 @@
             margin-top: 20px;
             font-size: 16px;
         }
+        
     </style>
 
     <form method="POST" action="{{ route('curso.store') }}">

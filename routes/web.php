@@ -58,7 +58,7 @@ Route::get('/cadastro/usuario', [CursoController::class, 'cadastro'])->name('cad
 
 Route::get('/pesquisas/agencia-de-formento', [AgenciadeFormentoController::class, 'pesquisas']);
 
-Route::get('/pesquisas/curso', [CursoController::class, 'cadastro']);
+Route::get('/pesquisas/curso', [CursoController::class, 'pesquisas']);
 
 Route::get('/pesquisas', [CadastroController::class, 'pesquisas']); //OBS
 

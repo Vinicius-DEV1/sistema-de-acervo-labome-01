@@ -24,7 +24,9 @@ class CursoController extends Controller
 
     public function pesquisas()
     {
-        return view( view: '/pesquisas/curso');
+        $cursos = ModelCurso::all();  // ou qualquer modelo que você esteja utilizando
+        return view('/pesquisas/curso', compact('cursos'));
+
     }
 
     /**
