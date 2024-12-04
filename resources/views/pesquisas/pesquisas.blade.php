@@ -83,7 +83,7 @@
 
     <div class="container">
     <!-- Box 1 -->
-    <div class="box" onclick="window.location.href='{{ route('cadastro.AgenciaDeFormento') }}'">
+    <div class="box" onclick="window.location.href='{{ route('pesquisas.AgenciaDeFormento') }}'">
     <span>Agência de Formento</span>
     </div>
 
@@ -93,62 +93,62 @@
     </div>
 
     <!-- Box 3 -->
-    <div class="box" onclick="window.location.href='{{ route('cadastro.Instituicao') }}'">
+    <div class="box" onclick="window.location.href='{{ route('pesquisas.Instituicao') }}'">
         <span>Instituição</span>
     </div>
 
     <!-- Box 4 -->
-    <div class="box" onclick="window.location.href='{{ route('cadastro.Pessoa') }}'">
+    <div class="box" onclick="window.location.href='{{ route('pesquisas.Pessoa') }}'">
         <span>Pessoa</span>
     </div>
 
     <!-- Box 5 -->
-    <div class="box" onclick="window.location.href='{{ route('cadastro.Projeto') }}'">
+    <div class="box" onclick="window.location.href='{{ route('pesquisas.Projeto') }}'">
         <span>Projeto</span>
     </div>
 
     <!-- Box 6 -->
-    <div class="box" onclick="window.location.href='{{ route('cadastro.TipoDeRecurso') }}'">
+    <div class="box" onclick="window.location.href='{{ route('pesquisas.TipoDeRecurso') }}'">
         <span>Recurso</span>
     </div>
 
     <!-- Box 7 -->
-    <div class="box" onclick="window.location.href='{{ route('cadastro.Relacoes') }}'">
+    <div class="box" onclick="window.location.href='{{ route('pesquisas.Relacoes') }}'">
         <span>Relações de Pesquisador e Entrevistado</span>
     </div>
 
     <!-- Box 8 -->
-    <div class="box" onclick="window.location.href='{{ route('cadastro.SituacaoDeEntrevista') }}'">
+    <div class="box" onclick="window.location.href='{{ route('pesquisas.SituacaoDeEntrevista') }}'">
         <span>Situação de Entrevista</span>
     </div>
 
     <!-- Box 9 -->
-    <div class="box" onclick="window.location.href='{{ route('cadastro.Tema') }}'">
+    <div class="box" onclick="window.location.href='{{ route('pesquisas.Tema') }}'">
         <span>Tema</span>
     </div>
 
     <!-- Box 10 -->
-    <div class="box" onclick="window.location.href='{{ route('cadastro.TipoDeAcervo') }}'">
+    <div class="box" onclick="window.location.href='{{ route('pesquisas.TipoDeAcervo') }}'">
         <span>Tipo de acervo</span>
     </div>
 
     <!-- Box 11 -->
-    <div class="box" onclick="window.location.href='{{ route('cadastro.TipoDeProjeto') }}'">
+    <div class="box" onclick="window.location.href='{{ route('pesquisas.TipoDeProjeto') }}'">
         <span>Tipo de Projeto</span>
     </div>
 
     <!-- Box 12 -->
-    <div class="box" onclick="window.location.href='{{ route('cadastro.TipoDeRecurso') }}'"">
+    <div class="box" onclick="window.location.href='{{ route('pesquisas.TipoDeRecurso') }}'"">
         <span>Tipo de Recurso</span>
     </div>
 
     <!-- Box 13 -->
-    <div class="box" onclick="window.location.href='{{ route('cadastro.Usuario') }}'">
+    <div class="box" onclick="window.location.href='{{ route('pesquisas.Usuario') }}'">
         <span>Usuário</span>
     </div>
 
     <!-- Box 14 -->
-    <div class="box" onclick="window.location.href='{{ route('cadastro.Arquivo') }}'">
+    <div class="box" onclick="window.location.href='{{ route('pesquisas.Arquivo') }}'">
         <span>Arquivos</span>
     </div>
 
