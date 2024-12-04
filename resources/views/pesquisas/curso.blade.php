@@ -14,11 +14,15 @@
             word-wrap: break-word; /* Permite a quebra de linha se ultrapassar o limite */
             white-space: normal; /* Quebra de linha */
         }
+
+        thead{
+            background-color: #f2f2f2;
+        }
     </style>
 
     <style>
         .form-group{
-            background-color: F9F9F9;
+            background-color: #F9F9F9;
             border: 1px solid gray;
             padding: 10px;
         }
@@ -27,7 +31,7 @@
             display: flex; /* Ativa o Flexbox */
             gap: 20px; /* Espaçamento entre as divs */
             border: 2px dashed gray;
-            background-color:F9F9F9;
+            background-color:#F9F9F9;
             padding: 10px;
         }
     </style>
@@ -74,9 +78,14 @@
                 <td>{{ $curso->nivel }}</td>
                 <td>{{ $curso->created_at }}</td>
                 <td>{{ $curso->updated_at }}</td>
+                <td> 
+                    <button type="button" class="btn btn-info">E</button>
+                    <button type="button" class="btn btn-danger">X</button>
+
+                </td>
             </tr>
             @endforeach
-    </tbody>
-</table>
+        </tbody>
+    </table>
 
 @endsection
