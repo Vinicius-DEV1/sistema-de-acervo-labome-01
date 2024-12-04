@@ -13,6 +13,7 @@ class PesquisasController extends Controller
     {
         return view(view: '/pesquisas/pesquisas');
     }
+    
 
     /**
      * Show the form for creating a new resource.

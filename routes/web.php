@@ -55,6 +55,9 @@ Route::get('/cadastro/instituicao', [InstituicaoController::class, 'cadastro'])-
 
 Route::get('/cadastro/pessoa', [PessoaController::class, 'cadastro'])->name('cadastro.Pessoa');
 
+Route::get('/cadastro/recurso', [RecursoController::class, 'cadastro'])->name('cadastro.Recurso');
+
+
 Route::get('/cadastro/relacoes', [RelacoesController::class, 'cadastro'])->name('cadastro.Relacoes');
 
 Route::get('/cadastro/situacao-de-entrevista', [SituacaoDeEntrevistaController::class, 'cadastro'])->name('cadastro.SituacaoDeEntrevista');
@@ -65,7 +68,7 @@ Route::get('/cadastro/tipo-de-acervo', [TipoDeAcervoController::class, 'cadastro
 
 Route::get('/cadastro/tipo-de-projeto', [TipoDeProjetoController::class, 'cadastro'])->name('cadastro.TipoDeProjeto');
 
-Route::get('/cadastro/recurso', [RecursoController::class, 'cadastro'])->name('cadastro.TipoDeRecurso');
+Route::get('/cadastro/recurso-tipo-de-recurso', [TipoDeRecursoController::class, 'cadastro'])->name('cadastro.TipoDeRecurso');
 
 Route::get('/cadastro/usuario', [CursoController::class, 'cadastro'])->name('cadastro.Usuario');
 
@@ -79,13 +82,15 @@ Route::get('/pesquisas/agencia-de-formento', [AgenciadeFormentoController::class
 
 Route::get('/pesquisas/curso', [CursoController::class, 'pesquisas'])->name('pesquisas.Curso');
 
-Route::get('/pesquisas/projeto', [CadastroController::class, 'pesquisas'])->name('pesquisas.Projeto');
+Route::get('/pesquisas/projeto', [ProjetoController::class, 'pesquisas'])->name('pesquisas.Projeto');
 
 Route::get('/pesquisas/arquivo', [ArquivoController::class, 'pesquisas'])->name('pesquisas.Arquivo');
 
 Route::get('/pesquisas/instituicao', [InstituicaoController::class, 'pesquisas'])->name('pesquisas.Instituicao');
 
 Route::get('/pesquisas/pessoa', [PessoaController::class, 'pesquisas'])->name('pesquisas.Pessoa');
+
+Route::get('/pesquisas/recurso', [RecursoController::class, 'pesquisas'])->name('pesquisas.Recurso');
 
 Route::get('/pesquisas/relacoes', [RelacoesController::class, 'pesquisas'])->name('pesquisas.Relacoes');
 
@@ -97,6 +102,6 @@ Route::get('/pesquisas/tipo-de-acervo', [TipoDeAcervoController::class, 'pesquis
 
 Route::get('/pesquisas/tipo-de-projeto', [TipoDeProjetoController::class, 'pesquisas'])->name('pesquisas.TipoDeProjeto');
 
-Route::get('/pesquisas/recurso', [RecursoController::class, 'pesquisas'])->name('pesquisas.TipoDeRecurso');
+Route::get('/pesquisas/recurso-tipo-de-recurso', [TipoDeRecursoController::class, 'pesquisas'])->name('pesquisas.TipoDeRecurso');
 
 Route::get('/pesquisas/usuario', [CursoController::class, 'pesquisas'])->name('pesquisas.Usuario');

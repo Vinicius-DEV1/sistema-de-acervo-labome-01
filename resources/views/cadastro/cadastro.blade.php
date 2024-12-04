@@ -108,7 +108,7 @@
     </div>
 
     <!-- Box 7 -->
-    <div class="box" onclick="window.location.href='{{ route('cadastro.TipoDeRecurso') }}'">
+    <div class="box" onclick="window.location.href='{{ route('cadastro.Recurso') }}'">
         <span>Recurso</span>
     </div>
 
