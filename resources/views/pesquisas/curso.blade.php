@@ -18,13 +18,17 @@
 
     <style>
         .form-group{
-            background-color: pink;
+            background-color: F9F9F9;
+            border: 1px solid gray;
+            padding: 10px;
         }
 
         .container {
             display: flex; /* Ativa o Flexbox */
             gap: 20px; /* Espaçamento entre as divs */
-            background-color:yellow;
+            border: 2px dashed gray;
+            background-color:F9F9F9;
+            padding: 10px;
         }
     </style>
         

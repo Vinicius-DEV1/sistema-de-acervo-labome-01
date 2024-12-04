@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\EmprestimosController;
+use App\Http\Controllers\RelatoriosController;
+
+
 use App\Http\Controllers\CadastroController;
 use App\Http\Controllers\CursoController;
 use App\Http\Controllers\AgenciaDeFormentoController;
@@ -15,21 +19,33 @@ use App\Http\Controllers\TipoDeAcervoController;
 use App\Http\Controllers\TipoDeProjetoController;
 use App\Http\Controllers\TipoDerecursoController;
 use App\Http\Controllers\UsuariosController;
+use App\Http\Controllers\PesquisasController;
 
 
 Route::get('/', function () {
     return view('index');
 });
 
+//emprestimos
+Route::get('/emprestimos', [EmprestimosController::class, 'index'])->name('a');
+
+//relatorios
+Route::get('/relatorios', [RelatoriosController::class, 'index'])->name('b');
+
+//logoff
+Route::get('/logoff', function () {
+    return view(view: '/sair');
+})->name('c');
 
 //ROTAS DE CADASTRO
+
+Route::get('/cadastro', [CadastroController::class, 'cadastro'])->name('cadastro.Cadastro'); // obs: método index do controller
+
 
 Route::get('/cadastro/agencia-de-formento', [AgenciadeFormentoController::class, 'cadastro'])->name('cadastro.AgenciaDeFormento');
 
 Route::get('/cadastro/curso', [CursoController::class, 'cadastro'])->name('cadastro.Curso');
 Route::post('/cadastro/curso', [CursoController::class, 'store'])->name('curso.store');
-
-Route::get('/cadastro', [CadastroController::class, 'cadastro'])->name('cadastro.Cadastro');
 
 Route::get('/cadastro/projeto', [ProjetoController::class, 'cadastro'])->name('cadastro.Projeto');
 
@@ -56,11 +72,12 @@ Route::get('/cadastro/usuario', [CursoController::class, 'cadastro'])->name('cad
 
 //ROTAS DE PESQUISA
 
+Route::get('/pesquisas', [PesquisasController::class, 'index']); // obs: método index do controller
+
+
 Route::get('/pesquisas/agencia-de-formento', [AgenciadeFormentoController::class, 'pesquisas']);
 
-Route::get('/pesquisas/curso', [CursoController::class, 'pesquisas']);
-
-Route::get('/pesquisas', [CadastroController::class, 'pesquisas']); //OBS
+Route::get('/pesquisas/curso', [CursoController::class, 'pesquisas'])->name('pesquisas.Curso');;
 
 Route::get('/pesquisas/projeto', [CadastroController::class, 'pesquisas']);
 

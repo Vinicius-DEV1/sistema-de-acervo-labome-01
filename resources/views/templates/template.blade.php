@@ -90,10 +90,10 @@
     <div class="menu">
         <a onclick="window.location.href='/'" >Inicial</a>
         <a onclick="window.location.href='/cadastro'">Cadastros</a>
-        <a >Pesquisas</a>
-        <a >Empréstimos</a>
-        <a >Relatórios</a>
-        <a >Sair</a>
+        <a onclick="window.location.href='/pesquisas'">Pesquisas</a>
+        <a onclick="window.location.href='/emprestimos'">Empréstimos</a>
+        <a onclick="window.location.href='/relatorios'">Relatórios</a>
+        <a onclick="window.location.href='/logoff'"> Sair </a>
     </div>
 
     <hr> 
